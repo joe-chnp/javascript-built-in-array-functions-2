@@ -2,7 +2,13 @@ const carCollection = ["toyota", "fiat", "honda", "bmw"];
 
 function updateCarCollection(carBrand) {
   // Start coding here
-}
+  if(carCollection.indexOf(carBrand) === -1){
+    carCollection.push(carBrand);
+    return `New car collection is: Toyota, Fiat, Honda, BMW, ${carBrand}.`;
+  } else {
+    return `${carBrand} already exists in position ${carCollection.indexOf(carBrand)+1} of the car collection.`;
+  };
+};
 
 //ผลลัพธ์ที่ควรได้จาก Example case
 //ในกรณีที่ยังไม่มียี่ห้อรถใน carCollection

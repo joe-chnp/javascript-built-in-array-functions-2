@@ -1,6 +1,7 @@
 function isPalindrome(string) {
   // Start coding here
-}
+  return `${[...string]}` === `${[...string].reverse()}`;
+};
 
 //Example case
 console.log(isPalindrome("reviver"));// true
